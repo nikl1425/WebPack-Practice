@@ -1,9 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-
+  <ItemGroup>
+    <Content Include="package.json" />
+    <Content Include="webpack.js" />
+    <Content Include="webpack.config.js" />
+    <Content Include="src\App.tsx" />
+    <Content Include="src\index.html" />
+    <Content Include="src\index.tsx" />
+    <Content Include=".babelrc" />
+    <Content Include="tsconfig.json" />
+    <Content Include=".gitignore" />
+    <Content Include="src\App.css" />
+    <Content Include="src\App.scss" />
+  </ItemGroup>
 </Project>
