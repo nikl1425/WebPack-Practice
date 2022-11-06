@@ -8,7 +8,6 @@
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
     <Content Include=".gitignore" />
-    <Content Include="appsettings.Development.json" />
     <Content Include="appsettings.json" />
     <Content Include="Program.cs" />
     <Content Include="Properties\launchSettings.json" />
