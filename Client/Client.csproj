@@ -7,7 +7,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="package.json" />
-    <Content Include="webpack.js" />
     <Content Include="webpack.config.js" />
     <Content Include="src\App.tsx" />
     <Content Include="src\index.html" />
