@@ -22,4 +22,15 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+app.UseSpa(spa => {
+
+    spa.Options.SourcePath = "dist";
+
+    if(app.Environment.IsDevelopment()){
+
+    }
+});
+
+
+
 app.Run();

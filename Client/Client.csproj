@@ -31,6 +31,7 @@
     <Folder Include="dist\" />
   </ItemGroup>
   <Target Name="NpmInstall" Inputs="package.json" Outputs="node_modules/.install-stamp">
+  <Message Text="NPM INSTALL" Importance="high" />
     <!--
         Use npm install or npm ci depending on RestorePackagesWithLockFile value.
         Uncomment the following lines if you want to use this feature:
@@ -51,6 +52,20 @@
       MSBuild runs NpmInstall before this task because of the DependsOnTargets attribute.
    -->
   <Target Name="NpmRunBuild" DependsOnTargets="NpmInstall" BeforeTargets="BeforeBuild">
+    <Message Text="NPM RUN BUILD" Importance="high" />
     <Exec Command="npm run build" />
   </Target>
+
+
+
+  <Target Name="CopySpaToOutput" AfterTargets="NpmRunBuild">
+  <Message Text="COPYING SPA TO OUTPUT" Importance="high" />
+  <ItemGroup>
+    <Content Include="dist\**">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    </ItemGroup>
+  </Target>
+
+
 </Project>

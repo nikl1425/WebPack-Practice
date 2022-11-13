@@ -1,0 +1,131 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/niklashjort/Desktop/Projects/webpackPractice/WebPack-Practice/Server/Server.csproj": {}
+  },
+  "projects": {
+    "/Users/niklashjort/Desktop/Projects/webpackPractice/WebPack-Practice/Client/Client.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/niklashjort/Desktop/Projects/webpackPractice/WebPack-Practice/Client/Client.csproj",
+        "projectName": "Client",
+        "projectPath": "/Users/niklashjort/Desktop/Projects/webpackPractice/WebPack-Practice/Client/Client.csproj",
+        "packagesPath": "/Users/niklashjort/.nuget/packages/",
+        "outputPath": "/Users/niklashjort/Desktop/Projects/webpackPractice/WebPack-Practice/Client/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/niklashjort/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100-rc.2.22477.23/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/niklashjort/Desktop/Projects/webpackPractice/WebPack-Practice/Server/Server.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/niklashjort/Desktop/Projects/webpackPractice/WebPack-Practice/Server/Server.csproj",
+        "projectName": "Server",
+        "projectPath": "/Users/niklashjort/Desktop/Projects/webpackPractice/WebPack-Practice/Server/Server.csproj",
+        "packagesPath": "/Users/niklashjort/.nuget/packages/",
+        "outputPath": "/Users/niklashjort/Desktop/Projects/webpackPractice/WebPack-Practice/Server/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/niklashjort/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/niklashjort/Desktop/Projects/webpackPractice/WebPack-Practice/Client/Client.csproj": {
+                "projectPath": "/Users/niklashjort/Desktop/Projects/webpackPractice/WebPack-Practice/Client/Client.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.SpaServices.Extensions": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100-rc.2.22477.23/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
