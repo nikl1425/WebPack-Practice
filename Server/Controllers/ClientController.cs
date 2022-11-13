@@ -5,22 +5,25 @@ namespace Server.Controllers
 {
 
     [ApiController]
-    [Route("/s")]
-    public class ClientController : ControllerBase
+    [Route("/")]
+    public class ClientController : Controller
 	{
-		public ClientController()
-		{
-			
-		}
-
-        [HttpGet]
-        public IActionResult HomePage()
+        IWebHostEnvironment _webHostEnvironment;
+		public ClientController(IWebHostEnvironment webHostEnvironment)
         {
-
-            
-            return PhysicalFile("index.html", "text/html");
-
+            _webHostEnvironment = webHostEnvironment;
         }
+
+
+        public IActionResult GetSpa()
+        {
+            string contentRootPath = _webHostEnvironment.ContentRootPath;
+
+            string spaIndex = Path.Combine(contentRootPath, "Client", "dist", "index.html");
+
+            return PhysicalFile(spaIndex, "text/html");
+        }
+
     }
 }
 
